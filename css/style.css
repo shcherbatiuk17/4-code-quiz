@@ -1,0 +1,131 @@
+:root {
+    --white: #000;
+    --smallfont: 10px;
+    --mediumfont: 14px;
+}
+
+body {
+    background-image: none;
+    background-color: purple;
+    font-family: 'Comic Sans MS';
+}
+
+header {
+    display: block;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 2px;
+    color: green;
+    font-size: 10px;
+}
+
+header #time-left {
+    float: left;
+    font-size: var(--smallfont);
+    color: var(--white);
+}
+
+h1 {
+    text-align: left;
+    color: pink;
+    text-shadow: 2px 2px red;
+    padding-top: 10px;
+    font-size: 60px;
+}
+
+main {
+    text-align: center;
+}
+
+.container {
+    display: block;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 10%;
+    width: 90%;
+    margin: 2rem 5rem;
+}
+
+.questions-pg,
+.quiz-fin,
+.highscores,
+#correct-incorrect {
+    display: none;
+}
+
+.button {
+    background: #777;
+    border: 5px solid yellow;
+    cursor: not-allowed;
+    font-size: var(--smallfont);
+}
+
+.button:hover {
+    background: #f00;
+    cursor: crosshair;
+}
+
+.choices-btn {
+    background: gray;
+    font-size: var(--mediumfont);
+    min-width: 50px;
+    min-height: 10px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.choices-btn:hover {
+    background: blue;
+    cursor: cell;
+}
+
+.start-page > p {
+    margin: 0.2rem;
+    line-height: 12px;
+    color: brown;
+    background-color: black;
+    font-size: var(--mediumfont);
+}
+
+#answer-key {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    left: 10px;
+}
+
+#correct-incorrect {
+    color: yellow;
+    font-size: 8px;
+    padding: 1px;
+}
+
+#quiz-fin > p {
+    color: cyan;
+    font-size: 10px;
+    margin: 2px 0;
+}
+
+#quiz-fin > #end-score {
+    font-size: var(--smallfont);
+}
+
+#highscore-list > li {
+    font-size: 12px;
+    color: gray;
+    margin: 3px 0;
+}
+
+#back-btn,
+#clear-hs {
+    margin-top: 5px;
+    padding: 2px;
+    background: brown;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    cursor: wait;
+}

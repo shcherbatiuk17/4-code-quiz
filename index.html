@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <header>
+      <button class="button" id="view-Highscores">View Highscores</button>
+      <p id="timer-left">Time: 60</p> 
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="start-page" id="start-page">
+          <h1>The ugliest codding quiz in history</h1>
+          <p>
+            I don't like you 
+          </p>
+          <button class="button" id="start-btn">Start suffering journey</button>
+        </section>
+
+        <section class="questions-pg" id="questions-pg">
+          <div>
+            <h1 id="questions">Insert Questions Here</h1>
+            <ul id="answer-key">
+              <li>
+                <button class="choices-btn" id="answer1" value="1">
+                  Answer1
+                </button>
+              </li>
+              <li>
+                <button class="choices-btn" id="answer2" value="2">
+                  Answer2
+                </button>
+              </li>
+              <li>
+                <button class="choices-btn" id="answer3" value="3">
+                  Answer3
+                </button>
+              </li>
+              <li>
+                <button class="choices-btn" id="answer4" value="4">
+                  Answer4
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div id="correct-incorrect">
+            <p>Correct or Incorrect</p>
+          </div>
+        </section>
+
+        <section class="quiz-fin" id="quiz-fin">
+          <h1 id="quiz-fin-title">All Done!</h1>
+          <p id="end-score">Your final score is: <span id="score"></span></p>
+          <p>
+            Enter Initials:
+            <input type="text" id="user-initials" />
+            <button class="button" id="submit-btn">Submit</button>
+          </p>
+        </section>
+
+        <section class="highscores" id="highscores-pg">
+          <h1>Current Highscores</h1>
+          <ol id="highscore-list">
+          </ol>
+          <button class="button" id="back-btn">Go Back</button>
+          <button class="button" id="clear-hs">Clear Highscores</button>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
